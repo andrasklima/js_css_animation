@@ -49,7 +49,7 @@ body {
 }
 #root.clicked h1,
 #root.clicked p {
-  animation-name: twist;
+  animation-name: around;
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
@@ -59,7 +59,7 @@ body {
 #root.clicked p {
   animation-direction: reverse;
 }
-@keyframes twist {
+@keyframes around {
   from {
     transform: translate(-50%, -50%) rotate(0deg);
   }
