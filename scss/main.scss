@@ -43,16 +43,34 @@ body {
   }
 
   &.clicked {
-
-    h1, 
-    p {      
-/*
-css animation
-keyframes
-transform rotate
-transform origin
-translate-t is rá kell rakni keyframe-re
-*/
+    h1 {
+      animation-name: twist;
+      animation-duration: 2s;
+      animation-direction: normal;
     }
+
+    p {
+      animation-name: twist;
+      animation-duration: 2s;
+      animation-direction: reverse;
+    }
+
+    @keyframes twist {
+      from {
+        transform: translate(-50%, -50%) rotate(0deg);
+      }
+      
+      to {
+        transform: translate(-50%, -50%) rotate(360deg);
+      }
+    }
+
+    /*
+      css animation
+      keyframes
+      transform rotate
+      transform origin
+      translate-t is rá kell rakni keyframe-re
+    */
   }
 }

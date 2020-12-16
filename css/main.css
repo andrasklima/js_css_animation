@@ -37,13 +37,30 @@ body {
 #root p {
   font-weight: 300;
 }
-#root.clicked h1,
-#root.clicked p {
+#root.clicked {
   /*
-  css animation
-  keyframes
-  transform rotate
-  transform origin
-  translate-t is rá kell rakni keyframe-re
+    css animation
+    keyframes
+    transform rotate
+    transform origin
+    translate-t is rá kell rakni keyframe-re
   */
+}
+#root.clicked h1 {
+  animation-name: twist;
+  animation-duration: 2s;
+  animation-direction: normal;
+}
+#root.clicked p {
+  animation-name: twist;
+  animation-duration: 2s;
+  animation-direction: reverse;
+}
+@keyframes twist {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
