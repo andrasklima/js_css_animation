@@ -50,7 +50,7 @@ body {
 #root.clicked h1,
 #root.clicked p {
   animation-name: around;
-  animation-duration: 2s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
 }
 #root.clicked h1 {
