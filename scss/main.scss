@@ -41,4 +41,18 @@ body {
   p {
     font-weight: 300;
   }
+
+  &.clicked {
+
+    h1, 
+    p {      
+/*
+css animation
+keyframes
+transform rotate
+transform origin
+translate-t is rá kell rakni keyframe-re
+*/
+    }
+  }
 }

@@ -37,3 +37,13 @@ body {
 #root p {
   font-weight: 300;
 }
+#root.clicked h1,
+#root.clicked p {
+  /*
+  css animation
+  keyframes
+  transform rotate
+  transform origin
+  translate-t is rá kell rakni keyframe-re
+  */
+}

@@ -57,7 +57,11 @@ function page_load() {
   myObjects.forEach(function (element) {
     console.log(element);
   });
-*/
+  */
+  
+  root.addEventListener("click", function () {
+    root.classList.toggle("clicked");
+  });
 }
 
 window.addEventListener("load", page_load);
