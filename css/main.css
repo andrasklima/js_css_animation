@@ -30,6 +30,7 @@ body {
   transform: translate(-50%, -50%);
   font-family: "Quicksand", sans-serif;
   font-size: 48px;
+  cursor: pointer;
 }
 #root h1 {
   font-weight: 700;
@@ -46,14 +47,16 @@ body {
     translate-t is rá kell rakni keyframe-re
   */
 }
-#root.clicked h1 {
-  animation-name: twist;
-  animation-duration: 2s;
-  animation-direction: normal;
-}
+#root.clicked h1,
 #root.clicked p {
   animation-name: twist;
   animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+#root.clicked h1 {
+  animation-direction: normal;
+}
+#root.clicked p {
   animation-direction: reverse;
 }
 @keyframes twist {

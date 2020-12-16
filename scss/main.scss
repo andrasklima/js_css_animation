@@ -32,6 +32,7 @@ body {
     transform: translate(-50%, -50%);
     font-family: "Quicksand", sans-serif;
     font-size: 48px;
+    cursor: pointer;
   }
 
   h1 {
@@ -43,15 +44,18 @@ body {
   }
 
   &.clicked {
-    h1 {
+    h1,
+    p {
       animation-name: twist;
       animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+
+    h1 {
       animation-direction: normal;
     }
 
     p {
-      animation-name: twist;
-      animation-duration: 2s;
       animation-direction: reverse;
     }
 
@@ -59,7 +63,7 @@ body {
       from {
         transform: translate(-50%, -50%) rotate(0deg);
       }
-      
+
       to {
         transform: translate(-50%, -50%) rotate(360deg);
       }
