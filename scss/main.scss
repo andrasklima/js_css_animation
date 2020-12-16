@@ -1,1 +1,44 @@
 /* main.scss */
+
+/* 
+h1, p
+position: fixed
+top: 
+left: 50%
+
+transform -50% -50%
+
+
+google fonts 4 vastagság
+p tag legvékonyabb
+h1 tag legvastagabb
+size 48px
+
+színpár háttér/szöveg
+nem lehet alapértelmezett css szín
+ */
+
+body {
+  background-color: rgba(95, 75, 139, 1); //Ultra Violet
+  color: rgba(230, 154, 141, 1); // Blooming Dahlia
+}
+
+#root {
+  h1,
+  p {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Quicksand", sans-serif;
+    font-size: 48px;
+  }
+
+  h1 {
+    font-weight: 700;
+  }
+
+  p {
+    font-weight: 300;
+  }
+}
